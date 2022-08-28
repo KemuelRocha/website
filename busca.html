@@ -10,15 +10,19 @@
     <body>
         <div class="container">
             <h1 class="titulo">
-                Árvore Binária
+                Busca Binária
             </h1>
             <p class="subtitulo">
-                Algoritmo de Busca<br><br>
+                Algoritmo de Busca Binária<br><br>
             </p>
-            <label>Insira os valores separados por vírgula</label><br>
-            <input type="text" id="valor" size="40" /><br>
-            <button type="submit" onclick="Ordenar()">Ordenar</button>
-            <h2 id="valorConvertido"></h2>
+            <label>Insira o valor, entre 1 e 200, para descobrir se é primo </label><br>
+
+            <h2>Valor para buscar: </h2>
+            <form>
+                <input type="text" name="form_vetor" id="valor_buscar"><br>
+                <button type="submit" onclick="buscar()"> Buscar</button>;
+                <p>Resultado: <span id="retorno"></span></p>
+            </form>
         </div>
     </body>
 </html>
