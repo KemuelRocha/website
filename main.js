@@ -17,8 +17,8 @@ function selectionSort(vetor){
 
 function ordenar(){
     var vetorElementos = document.getElementById("vetor_ordenar").value;
-    var resultado = vetorElementos.split(",").map(Number);
-    var entrada = JSON.parse(resultado);
-    document.getElementById("vetor_ordenado").innerHTML = selectionSort(entrada);
+    var resultado = vetorElementos.split(",");
+    let result = resultado.map(i=>Number(i))
+    document.getElementById("vetor_ordenado").innerHTML = selectionSort(result);
 }
 
