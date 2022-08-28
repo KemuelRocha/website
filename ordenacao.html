@@ -17,9 +17,14 @@
             </p>
             
             <label>Insira os valores separados por vírgula</label><br>
-            <input type="text" id="vetor" size="40" /><br>
-            <button type="submit" onclick="selectionSort()">Ordenar</button>
-            <h2 id="vetorOrdenado"></h2>
+            
+            <h2>Vetor para ordenar: </h2>
+            <form>
+                <input type="text" name="form_vetor" id="vetor_ordenar"><br>
+                <button type="submit" onclick="ordenar()">Ordenar</button><br>
+                
+                <p>Vetor Odenado: <span id="vetor_ordenado"></span></p>
+            </form>
         </div>
     </body>
 </html>
